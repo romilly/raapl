@@ -1,0 +1,6 @@
+ name insert row;_relation;_data
+ _relation←⍎name
+ _data←⊃_relation
+ _data←⊂_data⍪row
+ _relation←_data,(1↓_relation)
+ ⍎name,' ← _relation'

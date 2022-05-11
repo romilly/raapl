@@ -1,0 +1,3 @@
+ name create cols;_relation
+ _relation←⌽name cols((0,⍴cols)⍴' ')
+ ⍎name,' ← _relation'
