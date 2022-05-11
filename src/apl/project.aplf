@@ -1,0 +1,8 @@
+ new_name project args;old_name;_old_cols;_new_cols;_relation;_data
+ old_name←⊃args
+ +_new_cols←,1↓args
+ _relation←⍎old_name
+ _data←⊃_relation
+ _old_cols←1⊃_relation
+ _new_data←_data[;,_old_cols⍳_new_cols]
+ new_name set(_new_data _new_cols new_name)

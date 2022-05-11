@@ -3,4 +3,4 @@
  _data←⊃_relation
  _data←⊂_data⍪row
  _relation←_data,(1↓_relation)
- ⍎name,' ← _relation'
+name set _relation
