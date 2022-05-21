@@ -1,0 +1,25 @@
+:Class Relation
+⍝ represents a relation with fields, data, primary key(s)
+⍝ and optional foreign key(s)
+    :Field Public Name
+    :Field Public Fields
+    :Field Public Data
+
+    ∇ make args
+      :Access Public
+      :Implements Constructor
+      Name Fields←args
+      Data←(⊂⍬)⍴⍨⍴Fields
+    ∇
+
+    ∇ insert row
+      :Access Public Instance
+      Data←Data,¨⊂¨row
+    ∇
+
+    ∇ r←display
+      :Access Public Instance
+      r←Fields⍪⍉↑Data
+    ∇
+
+:EndClass ⍝ Relation
