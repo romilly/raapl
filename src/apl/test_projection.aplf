@@ -1,0 +1,7 @@
+ test_projection;r1;r2
+ r1←'Employees'relation'Name' 'Age' 'Salary'
+ r1.Insert¨('Peter' 42 55000)('John' 34 25000)
+ r2←'sals'r1.Project'Name' 'Salary'
+ r2.Fields testing.check'Name' 'Salary'
+ 2 testing.check r2.Rows
+ (,2)testing.check⍴r2.Data

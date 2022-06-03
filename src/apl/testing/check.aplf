@@ -1,4 +1,4 @@
- check←{
-     ⍺≡⍵: ⍬
-     'Test fails'⎕SIGNAL 6
- }
+ expected check actual
+:If expected ≢ actual
+    'Test fails'⎕SIGNAL 6
+:EndIf

@@ -36,7 +36,7 @@
       new_data←Data[indices]
       args←new_name(new_fields)
       r←⎕NEW Relation args
-      r.insert¨↑⍉↓new_data
+      r.Insert¨↑⍉↓new_data
     ∇
 
 :EndClass ⍝ Relation
