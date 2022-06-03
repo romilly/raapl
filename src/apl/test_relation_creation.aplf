@@ -1,0 +1,4 @@
+ test_relation_creation;r1
+ r1←'Employees'relation'Name' 'Age' 'Salary'
+ r1.Name check 'Employees'
+r1.Fields check 'Name' 'Age' 'Salary'

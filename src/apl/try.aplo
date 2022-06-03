@@ -1,0 +1,11 @@
+ try←{
+     ⍝ see if executing ⍺ ⍵⍵ ⍵ gives the expected result ⍺⍺
+     ⍝ if ⍺ (the leftmost argument to the operator) is ⊂⍬,
+     ⍝ assume that ⍵⍵ is monadic, otherwise dyadic
+
+     ⍝ limitation: you cannot verify that a dayadic function
+     ⍝ with a genuine left argument of ⊂⍬ gives the expected result
+
+     ⍺⍺≡⊂⍬:⍺≡⍵⍵ ⍵
+     ⍺≡⍺⍺ ⍵⍵ ⍵
+ }

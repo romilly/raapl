@@ -1,0 +1,7 @@
+ relation←{
+     ⍝ creare a new relation
+     ⍝ with name ⍺
+     ⍝ and fields ⍵
+     args←⍺ ⍵
+     ⎕NEW Relation args
+ }

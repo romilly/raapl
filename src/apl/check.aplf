@@ -1,0 +1,4 @@
+ check←{
+     ⍺≡⍵: ⍬
+     'Test fails'⎕SIGNAL 6
+ }
