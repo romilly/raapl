@@ -8,4 +8,4 @@ I've only implemented the `project` operator so far. More soon.
 
 Now has some simple unit tests.
 
-Run (or look at) `test_relation_creation`, `test_relation_can_insert_data`!
+Run (or look at) `test_all`.
