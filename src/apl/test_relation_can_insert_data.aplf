@@ -1,0 +1,4 @@
+ test_relation_can_insert_data;r1
+ r1←'Employees'relation'Name' 'Age' 'Salary'
+ r1.insert¨('Peter' 42 55000)('John' 34 25000)
+ (,2)testing.check⍴1⊃r1.Data
