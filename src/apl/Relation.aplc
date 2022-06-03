@@ -13,23 +13,28 @@
     ∇
 
 
-    ∇ insert row
+    ∇ Insert row
       :Access Public Instance
       Data←Data,¨⊂¨row
     ∇
 
-    ∇ r←display
+    ∇ r←Display
       :Access Public Instance
       r←Fields⍪⍉↑Data
     ∇
 
-    ∇ r←new_name project new_fields;indices;args
+    ∇ r←Rows;col1
+      :Access Public Instance
+      r←⍬⍴⍴1⊃Data
+    ∇
+
+    ∇ r←new_name Project new_fields;indices;args
       :Access Public Instance
     ⍝ return a relation containing the selected fields
     ⍝ and corresponding data
       indices←Fields⍳new_fields
       new_data←Data[indices]
-      args ← new_name(new_fields)
+      args←new_name(new_fields)
       r←⎕NEW Relation args
       r.insert¨↑⍉↓new_data
     ∇
