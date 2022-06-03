@@ -4,7 +4,7 @@ Educational implementation of relational algebra in APL.
 
 I've only implemented the `project` operator so far. More soon.
 
-**NB:** `Operator` is used in the relational algebra sense, not the APL sense!
+**NB:** Here `operator` is used in the relational algebra sense, not the APL sense!
 
 Now has some simple unit tests.
 
