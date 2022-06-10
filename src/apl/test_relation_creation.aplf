@@ -1,5 +1,5 @@
  test_relation_creation;r1
- r1←'Employees'relation'Name' 'Age' 'Salary'
+ r1←'Employees'relation'name' 'age' 'salary'
  r1.Name testing.check'Employees'
- r1.Fields testing.check'Name' 'Age' 'Salary'
+ r1.Fields testing.check'name' 'age' 'salary'
  r1.Data testing.check 3⍴⊂⍬

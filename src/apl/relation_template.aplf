@@ -1,0 +1,17 @@
+ z←Name relation_template Fields;count;field
+ count←0
+ z←⊂':Class ',Name,': Relation'
+ z,←⊂'∇ make args'
+ z,←⊂':Access Public Instance'
+ z,←⊂':Implements Constructor :Base args'
+ z,←⊂'∇'
+ :For field :In Fields
+     z,←⊂':Property Simple ',field
+     z,←⊂':Access Public'
+     z,←⊂'∇ z← Get'
+     z,←⊂'z ← ⊃Data[',(⍕count),']'
+     z,←⊂'∇'
+     z,←⊂':EndProperty'
+     count+←1
+ :EndFor
+ z←z,⊂':EndClass'

@@ -3,5 +3,6 @@
      ⍝ with name ⍺
      ⍝ and fields ⍵
      args←⍺ ⍵
-     ⎕NEW Relation args
+     r ← ⎕fix ⍺ relation_template ⍵
+     ⍎'⎕NEW ',⍺, ' args'
  }

@@ -1,0 +1,18 @@
+:Class Employees: Relation
+    ∇ make args
+      :Access Public Instance
+      :Implements Constructor :Base args
+    ∇
+    ∇ z←name
+      z←Fields[0]
+    ∇
+
+    ∇ z←age
+      z←Fields[1]
+    ∇
+
+    ∇ z←salary
+      z←Fields[2]
+    ∇
+
+:EndClass

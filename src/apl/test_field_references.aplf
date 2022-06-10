@@ -1,4 +1,4 @@
- test_relation_can_insert_data;r1
+ test_field_references;r1
  r1←'Employees'relation'name' 'age' 'salary'
  r1.Insert¨('Peter' 42 55000)('John' 34 25000)
- 2 testing.check r1.Rows
+ ('Peter' 'John')testing.check r1.name
