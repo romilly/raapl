@@ -69,6 +69,6 @@ These are methods defined in `Relation`.
 
 Run `test_all` to run all the current automated tests.
 
-Feedback is welcome,as are offers to contribute. I am working on this as a fun 
+Feedback is welcome, as are offers to contribute. I am working on this as a fun 
 project on Friday mornings, so the code will develop slowly.
 
