@@ -49,9 +49,8 @@ are all likely to be users of Dyalog APL.
 
 ### Use
 
-1. Open RIDE using `src/apl` as the working directory
-2. ]link.Create # .
-3. Create relations by invoking `r ← <name> relation <field_1> <field_2> ....<field_n>`. That will create an instance of a subclass of Relation, with the Fields available as read-only properties.
+1. Open RIDE using the project root as the working directory
+2. Create relations by invoking `r ← <name> relation <field_1> <field_2> ....<field_n>`. That will create an instance of a subclass of Relation, with the Fields available as read-only properties.
 
 ### Relational operators
 
