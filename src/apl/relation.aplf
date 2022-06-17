@@ -2,7 +2,8 @@
      ⍝ creare a new relation
      ⍝ with name ⍺
      ⍝ and fields ⍵
-     args←⍺ ⍵
-     r ← ⎕fix ⍺ relation_template ⍵
-     ⍎'⎕NEW ',⍺, ' args'
+     fields←f_lower ¨ ⍵
+     args←⍺ fields
+     r←⎕FIX ⍺ relation_template fields
+     ⍎'⎕NEW ',⍺,' args'
  }
