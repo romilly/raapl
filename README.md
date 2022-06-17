@@ -65,7 +65,7 @@ These are methods defined in `Relation`.
 5. `Rows` is a helper method that returns a scalar count of the tuples in 
    the relation.
 
-# Tests
+### Tests
 
 Run `test_all` to run all the current automated tests.
 
