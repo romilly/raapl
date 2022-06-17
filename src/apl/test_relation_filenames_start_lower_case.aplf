@@ -1,0 +1,5 @@
+ test_relation_filenames_start_lower_case;r1
+ r1←'Employees'relation'Name' 'age' 'salaryToday'
+ r1.Name testing.check'Employees'
+ r1.Fields testing.check'name' 'age' 'salaryToday'
+ r1.Data testing.check 3⍴⊂⍬

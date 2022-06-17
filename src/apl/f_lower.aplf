@@ -1,0 +1,2 @@
+ f_lower←{ ⍝ convert first letter to lower case
+     first←lcase 1↑⍵ ⋄ first,1↓⍵}
