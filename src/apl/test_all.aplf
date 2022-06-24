@@ -1,5 +1,6 @@
  test_all
  test_relation_creation
  test_relation_can_insert_data
-test_relation_filenames_start_lower_case
+ test_insert_rejects_duplicate_data
+ test_relation_filenames_start_lower_case
  test_projection

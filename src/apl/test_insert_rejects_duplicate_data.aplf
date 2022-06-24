@@ -1,0 +1,11 @@
+ test_insert_rejects_duplicate_data;r1;e1;e2
+ r1←'Employees'relation'name' 'age' 'salary'
+ e1←('Peter' 42 55000)
+ e2←('John' 34 25000)
+ r1.Insert¨e1 e2
+ :Trap 11
+    r1.Insert e1
+ :Else
+    →0
+ :EndTrap
+ 'Bug' ⎕signal 1001
