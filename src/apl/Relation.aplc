@@ -28,6 +28,11 @@
       r←⍬⍴⍴1⊃Data
     ∇
 
+    ∇ r←Rows
+      :Access Public Instance
+      r←#.zip Data
+    ∇
+
     ∇ r←new_name Project new_fields;indices;args
       :Access Public Instance
     ⍝ return a relation containing the selected fields
