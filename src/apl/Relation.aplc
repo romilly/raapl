@@ -13,8 +13,13 @@
     ∇
 
 
-    ∇ Insert row
+    ∇ Insert row;zipped;erow
       :Access Public Instance
+      zipped ← #.zip Data
+      erow ← ⊂row
+      :If erow ∊ zipped
+        'duplicate row is not alowed' ⎕signal 11 
+      :EndIf
       Data←#.zip(⊂row)⍪⍨#.zip Data
     ∇
 
