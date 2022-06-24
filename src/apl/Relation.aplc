@@ -15,7 +15,7 @@
 
     ∇ Insert row
       :Access Public Instance
-      Data←Data,¨⊂¨row
+      Data←#.zip(⊂row)⍪⍨#.zip Data
     ∇
 
     ∇ r←Display
