@@ -3,5 +3,5 @@
  r1.Insert¨('Peter' 42 55000)('John' 34 25000)
  r2←'sals'r1.Project'name' 'salary'
  r2.Fields testing.check'name' 'salary'
- 2 testing.check r2.Rows
+ 2 testing.check r2.RowCount
  (,2)testing.check⍴r2.Data

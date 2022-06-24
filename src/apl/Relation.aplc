@@ -23,7 +23,7 @@
       r←Fields⍪⍉↑Data
     ∇
 
-    ∇ r←Rows;col1
+    ∇ r←RowCount;col1
       :Access Public Instance
       r←⍬⍴⍴1⊃Data
     ∇
