@@ -1,19 +1,6 @@
-<map version="freeplane 1.5.9">
+<map version="freeplane 1.7.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node FOLDED="false" ID="Freemind_Link_1331878192" CREATED="1266488194781" MODIFIED="1581245692038" LINK="../../../../Dropbox/personal/planning/routine/active-projects.mm"><richcontent TYPE="NODE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      plan
-    </p>
-  </body>
-</html>
-</richcontent>
-<hook NAME="MapStyle">
+<node TEXT="raap;&#xa;plan" FOLDED="false" ID="Freemind_Link_1331878192" CREATED="1266488194781" MODIFIED="1655444395217" LINK="../../../../Dropbox/personal/planning/routine/active-projects.mm"><hook NAME="MapStyle">
     <properties fit_to_viewport="false;"/>
 
 <map_styles>
@@ -67,7 +54,9 @@
 </stylenode>
 </map_styles>
 </hook>
-<node TEXT="Goal" POSITION="right" ID="Freemind_Link_1242386705" CREATED="1266488217621" MODIFIED="1485097924419" COLOR="#37a3cb"/>
+<node TEXT="Goal" POSITION="right" ID="Freemind_Link_1242386705" CREATED="1266488217621" MODIFIED="1485097924419" COLOR="#37a3cb">
+<node TEXT="build and share an omplementation of Re;ational Algebra in APL" ID="ID_690678257" CREATED="1655444404975" MODIFIED="1655444428082"/>
+</node>
 <node TEXT="Plan" POSITION="right" ID="_" CREATED="1266488212530" MODIFIED="1266488546784" COLOR="#373dcb">
 <edge COLOR="#808080"/>
 </node>
