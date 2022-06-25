@@ -3,7 +3,9 @@
  z←⊂':Class ',Name,': Relation'
  z,←⊂'∇ make args'
  z,←⊂':Access Public Instance'
- z,←⊂':Implements Constructor :Base args'
+ z,←⊂':Implements Constructor'
+ z,←⊂'Name Fields←args'
+ z,←⊂'Data←(⊂⍬)⍴⍨⍴Fields'
  z,←⊂'∇'
  :For field :In Fields
      z,←⊂':Property Simple ',field

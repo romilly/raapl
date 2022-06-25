@@ -5,20 +5,13 @@
     :Field Public Fields
     :Field Public Data
 
-    ∇ make args
-      :Access Public
-      :Implements Constructor
-      Name Fields←args
-      Data←(⊂⍬)⍴⍨⍴Fields
-    ∇
-
 
     ∇ Insert row;zipped;erow
       :Access Public Instance
-      zipped ← #.zip Data
-      erow ← ⊂row
-      :If erow ∊ zipped
-        'duplicate row is not alowed' ⎕signal 11 
+      zipped←#.zip Data
+      erow←⊂row
+      :If erow∊zipped
+          'duplicate row is not alowed'⎕SIGNAL 11
       :EndIf
       Data←#.zip(⊂row)⍪⍨#.zip Data
     ∇
@@ -38,15 +31,12 @@
       r←#.zip Data
     ∇
 
-    ∇ r←new_name Project new_fields;indices;args
+    ∇ r←new_name Project new_fields
       :Access Public Instance
     ⍝ return a relation containing the selected fields
     ⍝ and corresponding data
-      indices←Fields⍳new_fields
-      new_data←Data[indices]
-      args←new_name(new_fields)
-      r←⎕NEW Relation args
-      r.Insert¨↑⍉↓new_data
+      r←new_name #.relation new_fields
+      r.Insert¨#.zip Data[Fields⍳new_fields]
     ∇
 
 :EndClass ⍝ Relation
