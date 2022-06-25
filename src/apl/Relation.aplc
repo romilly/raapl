@@ -46,4 +46,19 @@
       r.Data←nd
     ∇
 
+    ∇ r←name Join other;shared_fields
+      :Access Public Instance
+      shared_fields←Fields∩other.Fields
+      my_shared_values←zip Data[Fields⍳shared_fields]
+      ⍝ should check these are unique
+      other_shared_values←zip other.Data[other.Fields⍳shared_fields]
+      ⍝ should check these are unique
+      r←name #.relation∪Fields,other.Fields
+      my_data_mask←my_shared_values∊other_shared_values
+      my_data←my_data_mask/zip Data
+      other_data_mask←other_shared_values∊my_shared_values
+      other_data←other_data_mask/zip(⍴shared_fields)↓other.Data
+      r.Insert¨my_data,¨other_data
+    ∇
+
 :EndClass ⍝ Relation

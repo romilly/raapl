@@ -5,3 +5,4 @@
  test_relation_filenames_start_lower_case
  test_projection
  test_select
+ test_join

@@ -1,0 +1,11 @@
+ test_join;r1;r1
+ r1←'Employees'relation'empno' 'name' 'age' 'salary'
+ r1.Insert¨(2 'Peter' 42 55000)(4 'John' 34 25000)(5 'Peter' 36 37500)
+ r2←'Departments'relation'department_name' 'empno'
+ r2.Insert¨('Development' 2)('Admin' 5)
+ r3←'test'r2.Join r1
+ 2 testing.check r3.RowCount
+ ('department_name' 'empno' 'name' 'age' 'salary')testing.check r3.Fields
+ ('Development' 'Admin')testing.check r3.department_name
+ (2 5)testing.check r3.empno
+ ('Peter' 'Peter')testing.check r3.name
