@@ -36,11 +36,15 @@ would clash with properties of the Relation.
 
 RA is based on [Set Theory](https://en.wikipedia.org/wiki/Set_theory). The elements of Sets are unique within the Set that contains them, and they are unordered.
 
-`raapl` **will** implement the uniqueness constraint since this affects how the Insert and Project operations work.
+`raapl` implements the uniqueness constraint since this affects how the 
+Insert and Project operations work.
 
 However, `raapl` **will** order Fields and their values, since they are held in APL arrays, and it seems perverse to deliberately shuffle them.
 
-This has an advantage. RA distinguishes between a Relation and a Table; a Table is the form in which a Relation is displayed, and its rows and columns are inevitably ordered. Since the Fields and Values in `raapl` are ordered it is possible to display Relations directly.
+This has an advantage. RA distinguishes between a Relation and a Table; a 
+Table is the form in which a Relation is displayed, and its rows and columns 
+are inevitably ordered. Since the Fields and Values in `raapl` are ordered 
+it is possible to display Relations directly.
 
 ## Installation and use
 
@@ -49,8 +53,13 @@ are all likely to be users of Dyalog APL.
 
 ### Use
 
-1. Open RIDE using the project root as the working directory
+1. Open RIDE using the project root as the working directory.
 2. Create relations by invoking `r ← <name> relation <field_1> <field_2> ....<field_n>`. That will create an instance of a subclass of Relation, with the Fields available as read-only properties.
+
+NB: Relation is an abstract class; you are not expected to create instances 
+directly.
+It is a home for the behaviour shared by all relations thought the mechanism 
+of inheritance.
 
 ### Relational operators
 
