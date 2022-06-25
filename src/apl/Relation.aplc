@@ -39,4 +39,11 @@
       r.Insert¨#.zip Data[Fields⍳new_fields]
     ∇
 
+    ∇ r←new_name Select boolean;nd
+      :Access Public Instance
+      r←new_name #.relation Fields
+      nd←#.zip boolean/ #.zip Data
+      r.Data←nd
+    ∇
+
 :EndClass ⍝ Relation

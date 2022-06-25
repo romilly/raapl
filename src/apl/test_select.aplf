@@ -1,0 +1,7 @@
+ test_select;r1
+ r1←'Employees'relation'name' 'age' 'salary'
+ r1.Insert¨('Peter' 42 55000)('John' 34 25000)('Steve' 28 34250)
+ r2←'High_Earners'r1.Select r1.salary>30000
+ 2 testing.check r2.RowCount
+ ('Peter' 'Steve')testing.check r2.name
+ 42 28 testing.check r2.age
