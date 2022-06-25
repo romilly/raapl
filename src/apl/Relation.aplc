@@ -4,16 +4,16 @@
     :Field Public Name
     :Field Public Fields
     :Field Public Data
-
+    zip ← #.zip
 
     ∇ Insert row;zipped;erow
       :Access Public Instance
-      zipped←#.zip Data
+      zipped←zip Data
       erow←⊂row
       :If erow∊zipped
           'duplicate row is not alowed'⎕SIGNAL 11
       :EndIf
-      Data←#.zip(⊂row)⍪⍨#.zip Data
+      Data←zip(⊂row)⍪⍨zip Data
     ∇
 
     ∇ r←Display
@@ -28,7 +28,7 @@
 
     ∇ r←Rows
       :Access Public Instance
-      r←#.zip Data
+      r←zip Data
     ∇
 
     ∇ r←new_name Project new_fields
@@ -36,13 +36,13 @@
     ⍝ return a relation containing the selected fields
     ⍝ and corresponding data
       r←new_name #.relation new_fields
-      r.Insert¨#.zip Data[Fields⍳new_fields]
+      r.Insert¨zip Data[Fields⍳new_fields]
     ∇
 
     ∇ r←new_name Select boolean;nd
       :Access Public Instance
       r←new_name #.relation Fields
-      nd←#.zip boolean/ #.zip Data
+      nd←zip boolean/zip Data
       r.Data←nd
     ∇
 
